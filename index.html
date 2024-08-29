@@ -1,216 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARDAPIO E.M Burg</title>
-    <style>
-        body{
-            background-color: darkviolet;
-        }
-        .Tradicional{
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-        }
-        .casa {
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-.calabresa {
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-.frango {
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-.bacon {
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-.tudo {
-    border: 2px solid #333; /* Borda ao redor do bloco */
-    padding: 15px; /* Espaço interno */
-    margin: 20px auto; /* Espaço externo e centralização */
-    width: 300px; /* Largura do bloco */
-    text-align: center; /* Centraliza o texto */
-    background-color: #f9f9f9; /* Cor de fundo do bloco */
-    border-radius: 10px; /* Bordas arredondadas */
-}       
-.container1{
-    display: flex; /* Define um container flexível */
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-}
-.container2{
-    display: flex; /* Define um container flexível */
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-}
-.tituloburg{
-    text-align: center; /* Centraliza o texto */
-    font-size: 32px; /* Ajusta o tamanho da fonte */
-    color:#f9f9f9; /* Define a cor do texto */
-    margin: 20px 0; /* Adiciona espaço acima e abaixo do título */
-}
-.titulopedidos{
-    text-align: center; /* Centraliza o texto */
-    font-size: 20px; /* Ajusta o tamanho da fonte */
-    color:#f9f9f9; /* Define a cor do texto */
-}
-.finalizar{
-    text-align: center; /* Centraliza o texto */
-    font-size: 20px; /* Ajusta o tamanho da fonte */
-    color:#f9f9f9; /* Define a cor do texto */
-}
-.container3{
-    
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-    padding: 15px; /* Espaço interno do container */
-    color: #f9f9f9;
-    
-}
-.gerencionamentodepedidos{
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-    padding: 15px; /* Espaço interno do container */
-    color: #f9f9f9;
-}
-
-.container4{
-    
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-    padding: 15px; /* Espaço interno do container */
-    color: #f9f9f9;
-    
-}
-
-.pedidos{
-    
-    justify-content: space-between; /* Espaça os blocos igualmente */
-    gap: 20px; /* Espaçamento entre os blocos */
-    padding: 15px; /* Espaço interno do container */
-    border: 1px solid #f9f9f9; /* Borda ao redor do container */
-   color: #f9f9f9;
-    border-radius: 10px; /* Bordas arredondadas do container */
-}
-.pedidos {
-    display: flex;
-    gap: 20px; /* Ajuste o espaçamento entre as divs conforme necessário */
-}
-
-.container3, .container4, .container5, .container6 {
-    flex: 1; /* As divs irão ocupar espaços iguais */
-}
-input[type="text"] {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: none;
-    text-align: center;
-    font-size: 20px;
-    margin: 0 5px;
-    outline: none;
-    color: #f9f9f9;
-}
-button {
-    width: 20px;
-    height: 20px;
-    border: 1px solid white; /* Borda branca */
-    border-radius: 60%; /* Faz o botão ser circular */
-    background: none; /* Remove a cor de fundo */
-    font-size: 20px;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    padding: 0;
-    color: #f9f9f9;
-}
-
-    </style>
+    <title>Cardápio Digital Interativo</title>
 </head>
 <body>
 
-    <div class="tituloburg">
-    <h1>CARDÁPIO E.M BURG</h1>
-</div>
+    <!-- Apresentação do Cardápio -->
+    <h1>Cardápio</h1>
 
-<form action="#" method="post">
-    <a href="pedidos.html">
-        <input type="button" value="Faça seu pedido">
-    </a>
+    <!-- Categoria: Hambúrgueres -->
+    <h2>Hambúrgueres</h2>
+    <div>
+        <input type="checkbox" id="burger1" name="burger1">
+        <label for="burger1">Cheeseburger - Delicioso hambúrguer com queijo - R$ 15,00</label>
+        <br>
+        <label for="quantity1">Quantidade:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="burger2" name="burger2">
+        <label for="burger2">Bacon Burger - Hambúrguer com bacon crocante - R$ 18,00</label>
+        <br>
+        <label for="quantity2">Quantidade:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+    </div>
+
+    <!-- Categoria: Salgados -->
+    <h2>Salgados</h2>
+    <div>
+        <input type="checkbox" id="salgado1" name="salgado1">
+        <label for="salgado1">Coxinha - Coxinha de frango - R$ 5,00</label>
+        <br>
+        <label for="quantity3">Quantidade:</label>
+        <input type="number" id="quantity3" name="quantity3" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="salgado2" name="salgado2">
+        <label for="salgado2">Empada - Empada de camarão - R$ 6,00</label>
+        <br>
+        <label for="quantity4">Quantidade:</label>
+        <input type="number" id="quantity4" name="quantity4" min="1" value="1">
+    </div>
+
+    <!-- Categoria: Bebidas -->
+    <h2>Bebidas</h2>
+    <div>
+        <input type="checkbox" id="bebida1" name="bebida1">
+        <label for="bebida1">Refrigerante - 350ml - R$ 4,00</label>
+        <br>
+        <label for="quantity5">Quantidade:</label>
+        <input type="number" id="quantity5" name="quantity5" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="bebida2" name="bebida2">
+        <label for="bebida2">Suco Natural - 300ml - R$ 7,00</label>
+        <br>
+        <label for="quantity6">Quantidade:</label>
+        <input type="number" id="quantity6" name="quantity6" min="1" value="1">
+    </div>
+
+    <!-- Gerenciamento do Pedido -->
+    <h2>Carrinho de Compras</h2>
+    <div id="carrinho">
+        <!-- Os itens selecionados serão exibidos aqui -->
+        <p>Seu carrinho está vazio.</p>
+    </div>
+
+    <!-- Finalização do Pedido -->
+    <h2>Finalização do Pedido</h2>
+    <form>
+        <h3>Opções de Pagamento</h3>
+        <input type="radio" id="cartao" name="pagamento" value="cartao" checked>
+        <label for="cartao">Cartão (Débito ou Crédito)</label>
+        <br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="pix">Pix</label>
+
+        <h3>Dados para Entrega</h3>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <h3>Resumo do Pedido</h3>
+        <div id="resumo">
+            <!-- O resumo do pedido será exibido aqui -->
+            <p>Nenhum item selecionado.</p>
+        </div>
+
+        <button type="submit">Confirmar Pedido</button>
+        <button type="reset">Cancelar Pedido</button>
     </form>
-<br>
 
-<div class="container1">
-    <div class="Tradicional"> 
-    <h3>Tradicional</h3>
-    <p>Carne artesanal, queijo, ovo, <br>salada e molho especial</p>
-   <img src="tradicionalcatalogo.JPG" alt="">
-   
-</div>
-
-
-<div class="casa">
-    <h3>Da casa</h3>
-    <p>Carne artesanal, queijo,<br>salada e molho especial</p>
-    <img src="da casacatalogo.JPG" alt="">
-</div>
-
-<div class="calabresa">
-    <h3>Calabresa</h3>
-    <p>Carne artesanal, queijo, calabresa, <br>salada e molho especial</p>
-    <img src="calabresa cat.JPG" alt="">
-</div>
-
-</div>
-<div class="container2">
-<div class="frango">
-    <h3>Frango</h3>
-    <p>Carne artesanal, queijo, frango,<br> salada e molho especial</p>
-    <img src="Frangocatalogo.JPG" alt="">
-</div>
-
-<div class="bacon">
-    <h3>Bacon</h3>
-    <p>Carne artesanal, queijo, bacon,<br>salada e molho especial</p>
-    <img src="baconcatlogo.JPG" alt="">
-</div>
-
-<div class="tudo">
-    <h3>Tudão</h3>
-    <p>Carne artesanal, queijo, ovo, calabresa, <br>frango, bacon, salada e molho especial</p>
-    <img src="Tudocatalogo.JPG" alt="">
-</div>
-</div>
-
- 
 </body>
 </html>
